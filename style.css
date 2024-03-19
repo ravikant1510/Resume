@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+}
+
+/* Body Header */
+
+#body-header {
+  height: 65vh;
+  opacity: 0.8;
+  /* transparency */
+  background-image: url(image/macbook_mouse.jpg);
+  background-size: cover;
+  /* make imge to cover the dimentions */
+  background-position: center;
+  /* make imge come to center */
+  background-attachment: fixed;
+  /* fixed se bg-image fixed and content upar aata jayga scroll krne pr. */
+}
+
+/* Horizontal Lists */
+/* dekh rhe horizontal-list name kitna generic diya hai taki koi aur list bhi use kr ske, aise hi text center ke liye alg class bnai niche ki trf taki kisi aur chiz ka text center krna ho*/
+.horizontal-list {
+  list-style: none;
+  /* list-style for list, text-decoration form text, yh li vali style main display inline-block dene se bhi kaam ho ja tha rha ki list navigatiion ki trh aa gyi but list-style bhi deni hoti hai to be safer side,kuch browserd ko jrurt hoti hai */
+  padding-left: 0px;
+  /* yh jruri hai as list ko inline-block bnaya to bydefault vh left main pedding chodega... apne style ko uncomment kroge to pta chlega main dekhoge to pta chlega */
+  margin: 0;
+  /* bydefault margin bhi hota hai */
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.horizontal-list li a:hover {
+  color: lightgrey;
+  border-bottom: 1px solid white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Horizontal Lists  */
+/* .horizontal-list {
+  display: block;
+  text-align: center;
+}
+
+.horizontal-list li {
+  display: inline-block;
+}
+
+.horizontal-list li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 2rem;
+  padding-left: 20px;
+} */
+
+/* box-shadow is to explore kisi pr hover krte hai to backgroung main shadow aata hai, i confused that with background image */
+
+/* fauntawesome website se link lelo fir jo bhi icone utha lo unka even color bhi tum change kr skte ho */

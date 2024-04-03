@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  font-family: sans-serif;
+  font-size: 30px;
 }
 
 /* Body Header */
@@ -7,64 +9,86 @@ body {
 #body-header {
   height: 65vh;
   opacity: 0.8;
-  /* transparency */
-  background-image: url(image/macbook_mouse.jpg);
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
   background-size: cover;
-  /* make imge to cover the dimentions */
   background-position: center;
-  /* make imge come to center */
   background-attachment: fixed;
-  /* fixed se bg-image fixed and content upar aata jayga scroll krne pr. */
+  padding-top: 1.2rem;
 }
 
 /* Horizontal Lists */
-/* dekh rhe horizontal-list name kitna generic diya hai taki koi aur list bhi use kr ske, aise hi text center ke liye alg class bnai niche ki trf taki kisi aur chiz ka text center krna ho*/
+
 .horizontal-list {
   list-style: none;
-  /* list-style for list, text-decoration form text, yh li vali style main display inline-block dene se bhi kaam ho ja tha rha ki list navigatiion ki trh aa gyi but list-style bhi deni hoti hai to be safer side,kuch browserd ko jrurt hoti hai */
   padding-left: 0px;
-  /* yh jruri hai as list ko inline-block bnaya to bydefault vh left main pedding chodega... apne style ko uncomment kroge to pta chlega main dekhoge to pta chlega */
-  margin: 0;
-  /* bydefault margin bhi hota hai */
+  margin: 0px;
 }
 
 .horizontal-list li {
   display: inline-block;
   margin: 0px 8px 8px 0px;
+  font-weight: 100;
+  font-size: 1.5rem;
 }
 
 .horizontal-list li a {
   color: white;
   text-decoration: none;
-  transition: color 0.5s, border-bottom 4s;
 }
 
-.horizontal-list li a:hover {
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 4s;
+  /* transition on hover */
+}
+
+.nav-menu li a:hover {
   color: lightgrey;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .text-center {
   text-align: center;
 }
 
-/* Horizontal Lists  */
-/* .horizontal-list {
-  display: block;
-  text-align: center;
+/* Name and Social Icons*/
+
+#name-social-container {
+  margin-top: 20vh;
 }
 
-.horizontal-list li {
-  display: inline-block;
-}
-
-.horizontal-list li a {
-  text-decoration: none;
-  color: aliceblue;
+#my-name {
   font-size: 2rem;
-  padding-left: 20px;
-} */
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 
-/* box-shadow is to explore kisi pr hover krte hai to backgroung main shadow aata hai, i confused that with background image */
+.social-icons li {
+  border-radius: 50%;
+}
 
-/* fauntawesome website se link lelo fir jo bhi icone utha lo unka even color bhi tum change kr skte ho */
+.social-icons li:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a img {
+  width: 1rem;
+  padding: 8px;
+}
+
+/* about */
+
+#about img {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -15vh;
+}

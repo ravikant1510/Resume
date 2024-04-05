@@ -9,7 +9,7 @@ body {
 #body-header {
   height: 65vh;
   opacity: 0.8;
-  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+  background-image: url(image/macbook_mouse.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -28,7 +28,7 @@ body {
   display: inline-block;
   margin: 0px 8px 8px 0px;
   font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .horizontal-list li a {
@@ -38,7 +38,6 @@ body {
 
 .nav-menu li a {
   transition: color 0.5s, border-bottom 4s;
-  /* transition on hover */
 }
 
 .nav-menu li a:hover {
@@ -57,38 +56,111 @@ body {
 }
 
 #my-name {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.1rem;
   color: white;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.social-icons li {
+.social-icons li a i {
+  /*color: red;*/
+  padding: 10px;
+  font-size: 1rem;
   border-radius: 50%;
-}
-
-.social-icons li:hover {
-  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
 .social-icons li a i:hover {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-.social-icons li a img {
-  width: 1rem;
-  padding: 8px;
+/*Section Classes*/
+
+section {
+  width: 100%;
+  /*height: 75vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* about */
+section:nth-child(2n) {
+  background-color: #9e9b9b29;
+}
 
-#about img {
-  height: 30vh;
-  width: 30vh;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: 400;
+}
+
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+/*About Section*/
+
+#about {
+  height: auto;
+  width: 100%;
   position: relative;
-  top: -15vh;
+}
+
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: grey;
+  line-height: 28px;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+/*Skills Section*/
+
+.skills-display {
+  width: 70%;
+  /*height: 100px;*/
+  /*border: 2px solid black; 	*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Common Margin Classes */
+.mb75px {
+  margin-bottom: 75px;
+}
+
+/*common color classes */
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
 }

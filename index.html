@@ -3,8 +3,9 @@
 
 <head>
   <title>Ravikant Vaishnav</title>
-  <script src="https://kit.fontawesome.com/3fe9ea8060.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script src="https://kit.fontawesome.com/3fe9ea8060.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -78,11 +79,43 @@
   </header>
   <main>
     <section id="about">
-      <!-- inki specificity 1 point hi hai, these are not equal to inline css -->
-      <img src="./image/DSC00079.JPG" alt="my image" width="100vh" height="100%" >
+      <!-- height and width ki inki specificity 1 point hi hai, these are not equal to inline css -->
+
+
+      <div id="my-image">
+        <img src="./image/DSC00079.JPG" alt="my image" width="100vh" height="100%">
+      </div>
+      <div id="about-para">
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and <span class="text-highlight">typesetting industry</span>.
+          Lorem Ipsum has been the industry's standard <span class="text-highlight">dummy text ever</span> since the
+          1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+          survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s <span class="text-highlight">with the release of Letraset</span>
+          sheets containing Lorem Ipsum.
+        </p>
+      </div>
     </section>
 
-    <section id="skills"></section>
+    <section id="skills">
+      <h1 class="section-heading mb75px ">
+        <span>
+          <i class="fas fa-chalkboard-teacher"></i>
+        </span>
+        <span> SKILLS </span>
+      </h1>
+
+      <div class="skills-display">
+
+        <div class="skill-progress">
+
+        </div>
+      </div>
+
+    </section>
+
+
 
     <section id="experience"></section>
 
